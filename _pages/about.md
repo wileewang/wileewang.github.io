@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: Phd Student in HKUST(GZ).
 
 profile:
   align: right
