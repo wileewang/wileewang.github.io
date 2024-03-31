@@ -147,7 +147,6 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Inverting a video into our motion embeddings may open up a wider range of applications.
       </h2>
     </div>
   </div>
@@ -159,11 +158,13 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Motion Embeddings</h2>
         <div class="content has-text-justified">
           <p>
-            In this research, we present a novel approach to motion customization in video generation, addressing the widespread gap in the thorough exploration of motion representation within video generative models. Recognizing the unique challenges posed by video's spatiotemporal nature, our method introduces Motion Embeddings, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. These embeddings are designed to integrate seamlessly with the temporal transformer modules of video diffusion models, modulating self-attention computations across frames without compromising spatial integrity. Our approach offers a compact and efficient solution to motion representation and enables complex manipulations of motion characteristics through vector arithmetic in the embedding space. Furthermore, we identify the Temporal Discrepancy in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. We leverage this understanding to optimize the integration of our motion embeddings. Our contributions include the introduction of a tailored motion embedding for customization tasks, insights into the temporal processing differences in video models, and a demonstration of the practical advantages and effectiveness of our method through extensive experiments.
+            <!-- In this research, we present a novel approach to motion customization in video generation, addressing the widespread gap in the thorough exploration of motion representation within video generative models. Recognizing the unique challenges posed by video's spatiotemporal nature, our method introduces **Motion Embeddings**, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. These embeddings are designed to integrate seamlessly with the temporal transformer modules of video diffusion models, modulating self-attention computations across frames without compromising spatial integrity. Our approach offers a compact and efficient solution to motion representation and enables complex manipulations of motion characteristics through vector arithmetic in the embedding space. Furthermore, we identify the Temporal Discrepancy in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. We leverage this understanding to optimize the integration of our motion embeddings. Our contributions include the introduction of a tailored motion embedding for customization tasks, insights into the temporal processing differences in video models, and a demonstration of the practical advantages and effectiveness of our method through extensive experiments. -->
+            In this research, we propose <strong>Motion Embeddings</strong>, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. This representation enables the customization of video motion with remarkable efficiency, requiring less than <strong>0.5 million parameters</strong> and less than <strong>10 minutes</strong> of training time.
           </p>
+          <img src="static/images/method-pipeline.png" alt="MY ALT TEXT"/>
         </div>
       </div>
     </div>
@@ -172,7 +173,7 @@
 <!-- End paper abstract -->
 
 <!-- Pipeline Image-->
-<section class="hero is-light">
+<!-- <section class="hero is-light">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered" style="font-size: 32px; font-weight: bold;">
@@ -181,7 +182,7 @@
       <img src="static/images/method-pipeline.png" alt="MY ALT TEXT"/>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End Pipeline Image -->
 
 
@@ -421,13 +422,13 @@
       <h2 class="subtitle has-text-centered">
         <strong style="font-size: 28px;">Temporal Discrepancy </strong><br> 
       </h2>
-      <h2 class="subtitle has-text-left">
-        In Unet3D:
+      <p>
+        We also identify the <strong>Temporal Discrepancy</strong> in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. In Unet3D:
         <ul>
           <li><strong>(a)</strong> Attention maps of temporal transformer in down and up blocks demonstrate a "local" pattern where each frame focuses on its neighboring frames, a crucial aspect for accurately capturing motion when inverting a custom video into motion embeddings.</li>
           <li><strong>(b)</strong> Attention maps in "Mid blocks" demonstrate a "global" attention pattern where all frames primarily attend to the first and last frames disregarding adjacent frame information, leading to ineffective motion representation.</li>
         </ul>        
-      </h2>
+      </p>
       <img src="static/images/method-temporal.png" alt="MY ALT TEXT"/>
     </div>
   </div>
@@ -442,9 +443,10 @@
       <h2 class="subtitle has-text-centered">
         <strong style="font-size: 28px;">Motion Embeddings for UNetMotion (AnimateDiff)</strong><br> 
       </h2>
+      Our motion embedding functionally operates like <strong>positional embedding</strong>, which is found in almost all video generative models. This means our motion embeddings can be easily applied to many different video generative models using common techniques.
     </div>
   </div>
-  
+
   <!-- More Resuts-->
   <div style="display: flex; justify-content: center;">
     <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
