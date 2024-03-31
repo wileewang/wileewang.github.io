@@ -1,0 +1,596 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Motion Inversion for Video Customization</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.webp">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Motion Inversion for Video Customization</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://wileewang.github.io/" target="_blank">Luozhou Wang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Guibao Shen</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://yixunliang.github.io/" target="_blank">Yixun Liang</a><sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="http://www.xtao.website/" target="_blank">Xin Tao</a><sup>3</sup>,</span>
+                      <span class="author-block">
+                        <a href="Fifth AUTHOR PERSONAL LINK" target="_blank">Pengfei Wan</a><sup>3</sup>,</span>
+                        <span class="author-block">
+                          <a href="Sixth AUTHOR PERSONAL LINK" target="_blank">Di Zhang</a><sup>3</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://yijunmaverick.github.io/" target="_blank">Yijun Li</a><sup>4</sup>,</span>
+                            <span class="author-block">
+                              <a href="https://www.yingcong.me/" target="_blank">Yingcong Chen</a><sup>1,2,*</sup>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>HKUST(GZ), <sup>2</sup>HKUST, <sup>3</sup>Kuaishou, <sup>4</sup>Adobe Research</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author.</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/EnVision-Research/MotionInversion" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span> -->
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Inverting a video into our motion embeddings may open up a wider range of applications.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this research, we present a novel approach to motion customization in video generation, addressing the widespread gap in the thorough exploration of motion representation within video generative models. Recognizing the unique challenges posed by video's spatiotemporal nature, our method introduces Motion Embeddings, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. These embeddings are designed to integrate seamlessly with the temporal transformer modules of video diffusion models, modulating self-attention computations across frames without compromising spatial integrity. Our approach offers a compact and efficient solution to motion representation and enables complex manipulations of motion characteristics through vector arithmetic in the embedding space. Furthermore, we identify the Temporal Discrepancy in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. We leverage this understanding to optimize the integration of our motion embeddings. Our contributions include the introduction of a tailored motion embedding for customization tasks, insights into the temporal processing differences in video models, and a demonstration of the practical advantages and effectiveness of our method through extensive experiments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Pipeline Image-->
+<section class="hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered" style="font-size: 32px; font-weight: bold;">
+        Framework of Motion Inversion
+      </h2>
+      <img src="static/images/method-pipeline.png" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</section>
+<!-- End Pipeline Image -->
+
+
+
+
+<!-- Challenge Image-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <strong style="font-size: 28px;">Challenges in Multi-Condition Image Synthesis.</strong><br> 
+      </h2>
+      <h2 class="subtitle has-text-left">
+        Left: the "<strong>dominance</strong>" effect exists across various methods, where one object (e.g., car) overshadows the generation, omitting the other (e.g., dog). Right: The "<strong>ambiguity</strong>" issue, where it's unclear which object from the text matches the intended depth condition.
+      </h2>
+      <img src="static/images/0.gif" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop", style="margin-top: 40px;">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <strong style="font-size: 28px;">Motion Embeddings for UNet3D (ZeroScope)</strong><br> 
+      </h2>
+    </div>
+  </div>
+
+  
+  <!-- ZeroScope Resut-->
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/car-turn/car-turn-24.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A tank is running in the desert."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/car-turn/a_tank_driving_in_desert.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A tiger is running in the forest."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/car-turn/a_tiger_running_in_the_jungle.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/roundabout/car-roundabout-24.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A knight in armor rides a Segway"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/roundabout/A_knight_in_armor_rides_a_Segway_seed_3.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A toy train chugs around a roundabout tree"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/roundabout/A_toy_train_chugs_around_a_roundabout_tree_seed_26.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/longboard/longboard-24.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A teddy bear is riding a tricycle in Times Square"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/longboard/A_teddy_bear_is_riding_a_tricycle_in_Times_Square._seed_29.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A pigeon is strutting around a town square"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/longboard/A_pigeon_is_strutting_around_a_town_square._seed_8.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- AnimateDiff Resut-->
+<!--   <div class="container is-max-desktop", style="margin-top: 40px;">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <strong style="font-size: 28px;">Result AnimateDiff</strong><br> 
+      </h2>
+    </div>
+  </div> -->
+
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/train/train-24.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A little airplane does loops over the grass"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/train/A_little_airplane_does_loops_over_the_grass_seed_25.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A model car speeds down a miniature track"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/train/A_model_car_speeds_down_a_miniature_track_seed_34.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/bmx-bump/bmx-bumps-24.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A turtle plods in the sea"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/bmx-bump/A_turtle_plods_in_the_sea_seed_22.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A penguin is sliding on an icy slope"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/bmx-bump/A_penguin_is_sliding_on_an_icy_slope._seed_10.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/rollerblade/rollerblade-24.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A soccer ball weaves through cones on its own"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/rollerblade/A_soccer_ball_weaves_through_cones_on_its_own_seed_7.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A rabbit bounds across a green lawn"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/rollerblade/A_rabbit_bounds_across_a_green_lawn._seed_13.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- method-temporal.png-->
+<section class="hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <strong style="font-size: 28px;">Temporal Discrepancy </strong><br> 
+      </h2>
+      <h2 class="subtitle has-text-left">
+        In Unet3D:
+        <ul>
+          <li><strong>(a)</strong> Attention maps of temporal transformer in down and up blocks demonstrate a "local" pattern where each frame focuses on its neighboring frames, a crucial aspect for accurately capturing motion when inverting a custom video into motion embeddings.</li>
+          <li><strong>(b)</strong> Attention maps in "Mid blocks" demonstrate a "global" attention pattern where all frames primarily attend to the first and last frames disregarding adjacent frame information, leading to ineffective motion representation.</li>
+        </ul>        
+      </h2>
+      <img src="static/images/method-temporal.png" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</section>
+<!-- method-temporal.png -->
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop", style="margin-top: 40px;">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <strong style="font-size: 28px;">Motion Embeddings for UNetMotion (AnimateDiff)</strong><br> 
+      </h2>
+    </div>
+  </div>
+  
+  <!-- More Resuts-->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/bus.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A fish swimming in the lake"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/A_fish_swimming_in_the_lake_seed_0.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A motorbike driving in a city"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/A_motorbike_driving_in_a_city_seed_0.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/airplane.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A ship sailing on the sea"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/A_ship_sailing_on_the_sea_seed_0.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A car driving on a road"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/A_car_driving_on_a_road_seed_0.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/bear.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A tiger walking in the forest"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/A_tiger_walking_in_the_forest.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"An elephant walking on the rocks"</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/animatediff/An_elephant_walking_on_the_rocks.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop", style="margin-top: 40px;">
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <strong style="font-size: 28px;">Motion Embeddings for DiT (Latte, Open-Sora)</strong><br> 
+      </h2>
+      Coming soon!
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
