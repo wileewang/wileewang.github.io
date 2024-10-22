@@ -23,6 +23,9 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
 
   <title>Motion Inversion for Video Customization</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.webp">
@@ -56,31 +59,39 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://wileewang.github.io/" target="_blank">Luozhou Wang</a><sup>1</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Guibao Shen</a><sup>1</sup>,</span>
+                <a href="https://wileewang.github.io/" target="_blank">Luozhou Wang</a><sup>1,*</sup>,</span>
+              <span class="author-block">
+                <a href="https://ziyang1106.github.io/" target="_blank">Ziyang Mai</a><sup>1,*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://yixunliang.github.io/" target="_blank">Yixun Liang</a><sup>1</sup>,</span>
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Guibao Shen</a><sup>1</sup>,</span>
                     <span class="author-block">
-                      <a href="http://www.xtao.website/" target="_blank">Xin Tao</a><sup>3</sup>,</span>
-                      <span class="author-block">
-                        <a href="Fifth AUTHOR PERSONAL LINK" target="_blank">Pengfei Wan</a><sup>3</sup>,</span>
-                        <span class="author-block">
-                          <a href="Sixth AUTHOR PERSONAL LINK" target="_blank">Di Zhang</a><sup>3</sup>,</span>
-                          <span class="author-block">
-                            <a href="https://yijunmaverick.github.io/" target="_blank">Yijun Li</a><sup>4</sup>,</span>
-                            <span class="author-block">
-                              <a href="https://www.yingcong.me/" target="_blank">Yingcong Chen</a><sup>1,2,*</sup>
+                      <a href="https://yixunliang.github.io/" target="_blank">Yixun Liang</a><sup>1</sup>,</span>                      
                           </span>
                         </span>
                       </span>
                     </span>
                   </span>
                   </div>
-
+                  <div class="is-size-5 publication-authors">
+                    <!-- Paper authors -->
+                              <a href="http://www.xtao.website/" target="_blank">Xin Tao</a><sup>3</sup>,</span>
+                              <span class="author-block">
+                                <a href="Fifth AUTHOR PERSONAL LINK" target="_blank">Pengfei Wan</a><sup>3</sup>,</span>
+                                <span class="author-block">
+                                  <a href="Sixth AUTHOR PERSONAL LINK" target="_blank">Di Zhang</a><sup>3</sup>,</span>
+                                  <span class="author-block">
+                                    <a href="https://yijunmaverick.github.io/" target="_blank">Yijun Li</a><sup>4</sup>,</span>
+                                    <span class="author-block">
+                                      <a href="https://www.yingcong.me/" target="_blank">Yingcong Chen</a><sup>1,2,†</sup>
+                                </span>
+                              </span>
+                            </span>
+                          </span>
+                        </span>
+                        </div>
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>HKUST(GZ), <sup>2</sup>HKUST, <sup>3</sup>Kuaishou, <sup>4</sup>Adobe Research</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Corresponding Author.</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution. <sup>†</sup>Indicates Corresponding Author.</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -106,7 +117,16 @@
                       <span>Supplementary</span>
                     </a>
                   </span>
-
+                  <!-- HF link -->
+                  <span class="link-block">
+                    <a href="https://huggingface.co/spaces/ziyangmai/MotionInversion" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🤗 
+                    </span>
+                    <span>HF demo</span>
+                  </a>
+                  </span>
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/EnVision-Research/MotionInversion" target="_blank"
@@ -137,21 +157,101 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+  <div class="container is-max-desktop"">
+  </div>
+
+  <!-- More Resuts-->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">
+          Source Video <span style="color: red;">(Orbit shot)</span>
+        </p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-      </h2>
+        <source src="static/videos/teaser/orbit_source.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A rabbit, low poly game art style."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/orbit_rabit.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">
+          Source Video <span style="color: red;">(Crane up shot)</span>
+        </p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/crane_source.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"An island by the sea."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/crane_island.mp4" type="video/mp4">
+        </video>
+        
+      </div>
     </div>
   </div>
+
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/dance_source.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A robot is dancing."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/dance_robot.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/fight_source_cut.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"Monkeys are playing coconut."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/fight_monkey_cut.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+  </div>
+
 </section>
-<!-- End teaser video -->
+<!-- End teaser -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -161,8 +261,11 @@
         <h2 class="title is-3">Motion Embeddings</h2>
         <div class="content has-text-justified">
           <p>
-            <!-- In this research, we present a novel approach to motion customization in video generation, addressing the widespread gap in the thorough exploration of motion representation within video generative models. Recognizing the unique challenges posed by video's spatiotemporal nature, our method introduces **Motion Embeddings**, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. These embeddings are designed to integrate seamlessly with the temporal transformer modules of video diffusion models, modulating self-attention computations across frames without compromising spatial integrity. Our approach offers a compact and efficient solution to motion representation and enables complex manipulations of motion characteristics through vector arithmetic in the embedding space. Furthermore, we identify the Temporal Discrepancy in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. We leverage this understanding to optimize the integration of our motion embeddings. Our contributions include the introduction of a tailored motion embedding for customization tasks, insights into the temporal processing differences in video models, and a demonstration of the practical advantages and effectiveness of our method through extensive experiments. -->
-            In this research, we propose <strong>Motion Embeddings</strong>, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. This representation enables the customization of video motion with remarkable efficiency, requiring less than <strong>0.5 million parameters</strong> and less than <strong>10 minutes</strong> of training time.
+            In this research, we propose <strong>Motion Embeddings</strong>, 
+            a set of temporally coherent embeddings derived from a given video. 
+            Our approach provides a compact and efficient solution to motion representation, 
+            utilizing two types of embeddings: a <strong>Motion Query-Key Embedding</strong> to modulate the temporal attention map 
+            and a <strong>Motion Value Embedding</strong> to modulate the attention values
           </p>
           <img src="static/images/method-pipeline.png" alt="MY ALT TEXT"/>
         </div>
@@ -172,241 +275,156 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Pipeline Image-->
-<!-- <section class="hero is-light">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered" style="font-size: 32px; font-weight: bold;">
-        Framework of Motion Inversion
-      </h2>
-      <img src="static/images/method-pipeline.png" alt="MY ALT TEXT"/>
-    </div>
-  </div>
-</section> -->
-<!-- End Pipeline Image -->
-
-
-
-
-<!-- Challenge Image-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <strong style="font-size: 28px;">Challenges in Multi-Condition Image Synthesis.</strong><br> 
-      </h2>
-      <h2 class="subtitle has-text-left">
-        Left: the "<strong>dominance</strong>" effect exists across various methods, where one object (e.g., car) overshadows the generation, omitting the other (e.g., dog). Right: The "<strong>ambiguity</strong>" issue, where it's unclear which object from the text matches the intended depth condition.
-      </h2>
-      <img src="static/images/0.gif" alt="MY ALT TEXT"/>
-    </div>
-  </div>
-</section> -->
-
 <section class="hero teaser">
   <div class="container is-max-desktop", style="margin-top: 40px;">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        <strong style="font-size: 28px;">Motion Embeddings for UNet3D (ZeroScope)</strong><br> 
+        <strong style="font-size: 28px;">More results</strong><br> 
       </h2>
     </div>
   </div>
 
-  
-  <!-- ZeroScope Resut-->
-  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/car-turn/car-turn-24.mp4" type="video/mp4">
-        </video>
+  <!-- 新增的标题部分 -->
+  <!-- <div class="container is-max-desktop" style="margin-top: 20px;">
+    <div class="hero-body" style="display: flex; justify-content: space-between;">
+      <div style="flex: 1; text-align: center;">
+        <p style="font-size: 28px;">Camera</p>
       </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A tank is running in the desert."</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/car-turn/a_tank_driving_in_desert.mp4" type="video/mp4">
-        </video>
+      <div style="flex: 1;"> </div>
+      <div style="flex: 1; text-align: center;">
+        <p style="font-size: 28px;">Object</p>
       </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A tiger is running in the forest."</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/car-turn/a_tiger_running_in_the_jungle.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/roundabout/car-roundabout-24.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A knight in armor rides a Segway"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/roundabout/A_knight_in_armor_rides_a_Segway_seed_3.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A toy train chugs around a roundabout tree"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/roundabout/A_toy_train_chugs_around_a_roundabout_tree_seed_26.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/longboard/longboard-24.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A teddy bear is riding a tricycle in Times Square"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/longboard/A_teddy_bear_is_riding_a_tricycle_in_Times_Square._seed_29.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A pigeon is strutting around a town square"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/longboard/A_pigeon_is_strutting_around_a_town_square._seed_8.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-
-  <!-- AnimateDiff Resut-->
-<!--   <div class="container is-max-desktop", style="margin-top: 40px;">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <strong style="font-size: 28px;">Result AnimateDiff</strong><br> 
-      </h2>
+      <div style="flex: 1;"></div>
     </div>
   </div> -->
-
   <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
   <div style="display: flex; justify-content: center;">
     <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
       <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">
+          Source Video <span style="color: red;">(Orbit shot)</span>
+        </p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/orbit_source.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A house, 3d style."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/orbit_house.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
         <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
 <!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
         <!-- Your video here -->
-        <source src="static/videos/train/train-24.mp4" type="video/mp4">
+        <source src="static/videos/teaser/dance_source.mp4" type="video/mp4">
         </video>
         
       </div>
       <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A little airplane does loops over the grass"</p>
+        <p style="font-family: 'Segoe Print', sans-serif;">"Skeleton in suit is dancing, in autumn."</p>
 <!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
         <!-- Your video here -->
-        <source src="static/videos/train/A_little_airplane_does_loops_over_the_grass_seed_25.mp4" type="video/mp4">
+        <source src="static/videos/teaser/dance_skeleton.mp4" type="video/mp4">
         </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A model car speeds down a miniature track"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/train/A_model_car_speeds_down_a_miniature_track_seed_34.mp4" type="video/mp4">
-        </video>
+
       </div>
     </div>
   </div>
 
-  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/bmx-bump/bmx-bumps-24.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A turtle plods in the sea"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/bmx-bump/A_turtle_plods_in_the_sea_seed_8.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A penguin is sliding on an icy slope"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/bmx-bump/A_penguin_is_sliding_on_an_icy_slope._seed_10.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
 
   <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
   <div style="display: flex; justify-content: center;">
     <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
       <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">
+          Source Video <span style="color: red;">(Crane up shot)</span>
+        </p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/crane_source.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"Ice on the sea in sunset."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/crane_ice.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
         <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
 <!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
         <!-- Your video here -->
-        <source src="static/videos/rollerblade/rollerblade-24.mp4" type="video/mp4">
+        <source src="static/videos/teaser/pull_up_source_cut.mp4" type="video/mp4">
         </video>
         
       </div>
       <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A soccer ball weaves through cones on its own"</p>
+        <p style="font-family: 'Segoe Print', sans-serif;">"A tiger doing pull-ups in the forest."</p>
 <!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
         <!-- Your video here -->
-        <source src="static/videos/rollerblade/A_soccer_ball_weaves_through_cones_on_its_own_seed_7.mp4" type="video/mp4">
+        <source src="static/videos/teaser/pull_up_tiger2_cut.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+  </div>
+  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
+  <div style="display: flex; justify-content: center;">
+    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">
+          Source Video <span style="color: red;">(Custom shot)</span>
+        </p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/tilt_rotate_source.mp4" type="video/mp4">
         </video>
         
       </div>
       <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A rabbit bounds across a green lawn"</p>
+        <p style="font-family: 'Segoe Print', sans-serif;">"A high-tech chip."</p>
 <!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
         <!-- Your video here -->
-        <source src="static/videos/rollerblade/A_rabbit_bounds_across_a_green_lawn._seed_13.mp4" type="video/mp4">
+        <source src="static/videos/teaser/tilt_rotate_chip.mp4" type="video/mp4">
         </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/sit_source_cut.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <div style="text-align: center;">
+        <p style="font-family: 'Segoe Print', sans-serif;">"A dragon sitting in a flora garden."</p>
+<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
+        <video poster="" id="tree" autoplay controls muted loop style="width: 400px;">
+        <!-- Your video here -->
+        <source src="static/videos/teaser/sit_dragon_cut.mp4" type="video/mp4">
+        </video>
+
       </div>
     </div>
   </div>
@@ -414,149 +432,152 @@
 </section>
 
 
-
-<!-- method-temporal.png-->
-<section class="hero is-light">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <strong style="font-size: 28px;">Temporal Discrepancy </strong><br> 
-      </h2>
-      <p>
-        We also identify the <strong>Temporal Discrepancy</strong> in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. In Unet3D:
-        <ul>
-          <li><strong>(a)</strong> Attention maps of temporal transformer in down and up blocks demonstrate a "local" pattern where each frame focuses on its neighboring frames, a crucial aspect for accurately capturing motion when inverting a custom video into motion embeddings.</li>
-          <li><strong>(b)</strong> Attention maps in "Mid blocks" demonstrate a "global" attention pattern where all frames primarily attend to the first and last frames disregarding adjacent frame information, leading to ineffective motion representation.</li>
-        </ul>        
-      </p>
-      <img src="static/images/method-temporal.png" alt="MY ALT TEXT"/>
+<!-- Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop", style="margin-top: 40px;">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Debiasing</h2>
+        <div class="content has-text-justified">
+          <p>
+            <!-- In this research, we present a novel approach to motion customization in video generation, addressing the widespread gap in the thorough exploration of motion representation within video generative models. Recognizing the unique challenges posed by video's spatiotemporal nature, our method introduces **Motion Embeddings**, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. These embeddings are designed to integrate seamlessly with the temporal transformer modules of video diffusion models, modulating self-attention computations across frames without compromising spatial integrity. Our approach offers a compact and efficient solution to motion representation and enables complex manipulations of motion characteristics through vector arithmetic in the embedding space. Furthermore, we identify the Temporal Discrepancy in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. We leverage this understanding to optimize the integration of our motion embeddings. Our contributions include the introduction of a tailored motion embedding for customization tasks, insights into the temporal processing differences in video models, and a demonstration of the practical advantages and effectiveness of our method through extensive experiments. -->
+            <strong>Left:</strong> For the Motion Query-Key Embedding, which influences the attention map, we exclude the spatial dimensions. 
+            Including them would cause the attention map between frames to capture the object's shape 
+            (e.g., the shape of the tank in the original video is visible in the attention map). 
+            <strong>Right:</strong> Following the concept of optical flow, 
+            we apply a differential operation to the Spatial-2D Motion Value Embedding, 
+            removing static appearance and preserving dynamic motion.    </p>      
+            <img src="static/images/method-2.jpg" alt="MY ALT TEXT"/>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- method-temporal.png -->
-
+<!-- End Method -->
 
 
 <section class="hero teaser">
   <div class="container is-max-desktop", style="margin-top: 40px;">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <strong style="font-size: 28px;">Motion Embeddings for UNetMotion (AnimateDiff)</strong><br> 
-      </h2>
-      Our motion embedding functionally operates like <strong>positional embedding</strong>, which is found in almost all video generative models. This means our motion embeddings can be easily applied to many different video generative models using common techniques.
-    </div>
-  </div>
-
-  <!-- More Resuts-->
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/bus.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A fish swimming in the lake"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/A_fish_swimming_in_the_lake_seed_0.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A motorbike driving in a city"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/A_motorbike_driving_in_a_city_seed_0.mp4" type="video/mp4">
-        </video>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motion Embeddings for ZeroScope and AnimateDiff
+        </h2>
+        <div class="content has-text-justified">
+          <p>
+            <!-- In this research, we present a novel approach to motion customization in video generation, addressing the widespread gap in the thorough exploration of motion representation within video generative models. Recognizing the unique challenges posed by video's spatiotemporal nature, our method introduces **Motion Embeddings**, a set of explicit, temporally coherent one-dimensional embeddings derived from a given video. These embeddings are designed to integrate seamlessly with the temporal transformer modules of video diffusion models, modulating self-attention computations across frames without compromising spatial integrity. Our approach offers a compact and efficient solution to motion representation and enables complex manipulations of motion characteristics through vector arithmetic in the embedding space. Furthermore, we identify the Temporal Discrepancy in video generative models, which refers to variations in how different motion modules process temporal relationships between frames. We leverage this understanding to optimize the integration of our motion embeddings. Our contributions include the introduction of a tailored motion embedding for customization tasks, insights into the temporal processing differences in video models, and a demonstration of the practical advantages and effectiveness of our method through extensive experiments. -->
+            Our motion embedding functionally operates like <strong>positional embedding</strong>, which is found in almost all video generative models. This means our motion embeddings can be easily applied to many different video generative models using common techniques.
+            <br>
+            The first three slides are based on ZeroScope, and the last slide is based on AnimateDiff.
+            
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/airplane.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A ship sailing on the sea"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/A_ship_sailing_on_the_sea_seed_0.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A car driving on a road"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/A_car_driving_on_a_road_seed_0.mp4" type="video/mp4">
-        </video>
+  <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/car-turn/car-turn-24.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/car-turn/a_tank_driving_in_desert.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/car-turn/a_tiger_running_in_the_jungle.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/roundabout/car-roundabout-24.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/roundabout/A_knight_in_armor_rides_a_Segway_seed_3.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/roundabout/A_toy_train_chugs_around_a_roundabout_tree_seed_26.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- GIF展示区域现在在它自己的容器中，并且没有最大宽度限制 -->
-  <div style="display: flex; justify-content: center;">
-    <div class="gif-container" style="display: flex; justify-content: center; gap: 20px; margin-top: 0px;">
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">Source Video</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/bear.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"A tiger walking in the forest"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/A_tiger_walking_in_the_forest.mp4" type="video/mp4">
-        </video>
-        
-      </div>
-      <div style="text-align: center;">
-        <p style="font-family: 'Segoe Print', sans-serif;">"An elephant walking on the rocks"</p>
-<!--         <img src="static/images/0.gif" alt="MY ALT TEXT" style="margin: 0 10px; width: 400px;"/> -->
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/animatediff/An_elephant_walking_on_the_rocks.mp4" type="video/mp4">
-        </video>
+    <div class="carousel-inner">
+      <!-- Second Slide -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/longboard/longboard-24.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/longboard/A_teddy_bear_is_riding_a_tricycle_in_Times_Square._seed_29.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/longboard/A_pigeon_is_strutting_around_a_town_square._seed_8.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/train/train-24.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/train/A_little_airplane_does_loops_over_the_grass_seed_25.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/train/A_model_car_speeds_down_a_miniature_track_seed_34.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
+    <div class="carousel-inner">
+      <!-- Third Slide -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/bmx-bump/bmx-bumps-24.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/bmx-bump/A_turtle_plods_in_the_sea_seed_8.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/bmx-bump/A_penguin_is_sliding_on_an_icy_slope._seed_10.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/rollerblade/rollerblade-24.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/rollerblade/A_soccer_ball_weaves_through_cones_on_its_own_seed_7.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/rollerblade/A_rabbit_bounds_across_a_green_lawn._seed_13.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-inner">
+      <!-- Third Slide -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/animatediff/airplane.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/animatediff/A_ship_sailing_on_the_sea_seed_0.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/animatediff/A_car_driving_on_a_road_seed_0.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/animatediff/bear.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/animatediff/A_tiger_walking_in_the_forest.mp4" type="video/mp4">
+          </video>
+          <video class="me-2" width="200" controls autoplay muted loop>
+            <source src="static/videos/animatediff/An_elephant_walking_on_the_rocks.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>      
   </div>
+  <br>
+  
 </section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop", style="margin-top: 40px;">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <strong style="font-size: 28px;">Motion Embeddings for DiT (Latte, Open-Sora)</strong><br> 
-      </h2>
-      Coming soon!
-    </div>
-  </div>
-</section>
-
-
-
 
 
 
@@ -564,14 +585,18 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{wang2024motion,
-        title={Motion Inversion for Video Customization}, 
-        author={Luozhou Wang and Guibao Shen and Yixun Liang and Xin Tao and Pengfei Wan and Di Zhang and Yijun Li and Yingcong Chen},
-        year={2024},
-        eprint={2403.20193},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
-  }</code></pre>
+      <pre>
+        <code>@misc{wang2024motioninversionvideocustomization,
+          title={Motion Inversion for Video Customization}, 
+          author={Luozhou Wang and Ziyang Mai and Guibao Shen and Yixun Liang and Xin Tao and Pengfei Wan and Di Zhang and Yijun Li and Yingcong Chen},
+          year={2024},
+          eprint={2403.20193},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2403.20193}, 
+          }
+        </code>
+</pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -595,11 +620,11 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
   </body>
   </html>

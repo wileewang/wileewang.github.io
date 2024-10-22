@@ -135,3 +135,13 @@ body {
 
 
 
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item video {
+  max-width: "150";
+  height: auto;
+}
