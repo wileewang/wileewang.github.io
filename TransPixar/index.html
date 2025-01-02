@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>TransPixar: Advancing Text-to-Video Generation with Transparency</title>
+	<link rel="icon" type="image/x-icon" href="https://Kiss3DGen.github.io/assets/css/images/favicon.ico">
+    <meta content="TransPixar: Advancing Text-to-Video Generation with Transparency" name="description" />
+    <meta content="summary" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="static/css/template.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/my_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic", "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic", "Changa One:400,400italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Varela Round:400", "Bungee Shade:regular", "Roboto:300,regular,500"]
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        ! function (o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <script type="text/javascript" src="static/js/zoom.js"></script>
+    <script type="text/javascript" src="static/js/video_comparison.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLDP9MKGC8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MLDP9MKGC8');
+    </script>
+    <script type="module" src="static/js/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="section hero nerf-_v2">
+        <div class="container-2 nerf_header_v2 w-container">
+            <h1 class="nerf_title_v2">TransPixar:<br /> Advancing Text-to-Video Generation with Transparency</h1>
+            <!-- <div class="nerf_subheader_v2"></div> -->
+            <div class="nerf_subheader_v2">
+                <div>
+                    <a href="https://wileewang.github.io/" target="_blank" class="nerf_authors_v2">Luozhou Wang<span
+                            class="text-span_nerf"></span></a><sup> 1,*</sup>,&nbsp;&nbsp;
+
+                    <a href="https://yijunmaverick.github.io/" target="_blank" class="nerf_authors_v2">Yijun Li<span
+                        class="text-span_nerf"></span></a><sup> 3,**</sup>,&nbsp;&nbsp;
+                    
+
+		            <h1 class="nerf_affiliation_v2">Zhifei Chen</h1><sup> 1</sup>,&nbsp;&nbsp;
+
+                    <a href="http://juiwang.com/" target="_blank" class="nerf_authors_v2"> Jui-Hsien Wang<span
+                            class="text-span_nerf"></span></a><sup> 3</sup>,&nbsp;&nbsp;
+
+                    <a href="https://zzutk.github.io/" target="_blank" class="nerf_authors_v2">Zhifei Zhang<span
+                        class="text-span_nerf"></span></a><sup> 3</sup>,&nbsp;&nbsp;
+
+                    <a href="https://sites.google.com/site/hezhangsprinter" target="_blank" class="nerf_authors_v2">He Zhang<span
+                            class="text-span_nerf"></span></a><sup> 3</sup>,&nbsp;&nbsp;
+
+                    <a href="https://sites.google.com/site/zhelin625/home" target="_blank" class="nerf_authors_v2">Zhe Lin<span
+                            class="text-span_nerf"></span></a><sup> 3</sup>,&nbsp;&nbsp;
+                    
+                    <a href="https://www.yingcong.me/" target="_blank" class="nerf_authors_v2">Yingcong Chen<span
+                            class="text-span_nerf"></span></a><sup> 1,2,†</sup>
+                </div>
+                <div>
+                    <h1 class="nerf_affiliation_v2"><sup>1 </sup>HKUST(GZ)</h1>,
+                    <h1 class="nerf_affiliation_v2"><sup>2 </sup>HKUST</h1>,
+                    <h1 class="nerf_affiliation_v2"><sup>3 </sup>Adobe Research</h1>
+                </div>
+                <div>
+                    <h1 class="nerf_affiliation_v2"><sup>* </sup>Intership Project</h1>,
+                    <h1 class="nerf_affiliation_v2"><sup>** </sup>Project Lead</h1>,
+                    <h1 class="nerf_affiliation_v2"><sup>† </sup>Corresponding Author</h1>
+                </div>
+
+                <div class="external-link">
+                    <a class="btn" href="https://arxiv.org/pdf/2405.14979" role="button" target="_blank">
+                        <i class="ai ai-arxiv"></i> Arxiv </a>
+                    <a class="btn" href="paper/paper.pdf" role="button" target="_blank">
+                        <i class="fa fa-file-pdf"></i> Paper </a>
+                    <a class="btn" href="https://huggingface.co/spaces/wileewang/TransPixar" role="button" target="_blank">
+                        <i class="fa-solid fa-chess-knight"></i> Demo (HF) </a> 
+                    <a class="btn" href="https://github.com/wileewang/TransPixar" role="button" target="_blank" disabled>
+                        <i class="fa-brands fa-github"></i> Code </a>
+                    <a class="btn" href="supp/index.html" role="button" target="_blank">
+                        <i class="fa fa-folder-open"></i> Supplementary </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- <center>
+        <video src="assets/teaser_video.mp4" controls style="max-width: 100%; width: 1000px; height: auto;"></video>
+    </center> -->
+    <div data-anchor="slide1" class="section nerf_section">
+        <div class="w-container grey_container">
+            <h2 class="grey-heading_nerf">Abstract</h2>
+            <p class="paragraph-3 nerf_text nerf_results_text">
+                Text-to-video generative models have made significant strides, enabling diverse applications in entertainment, advertising, and education. 
+                However, generating RGBA video, which includes alpha channels for transparency, remains a challenge due to limited datasets and the difficulty of adapting existing models. 
+                Alpha channels are crucial for visual effects (VFX), allowing transparent elements like smoke and reflections to blend seamlessly into scenes.
+                We introduce <font color="#36afe8"><b>TransPixar</b></font>, a method to extend pretrained video models for RGBA generation while retaining the original RGB capabilities. 
+                TransPixar leverages a diffusion transformer (DiT) architecture, incorporating alpha-specific tokens and using LoRA-based fine-tuning to jointly generate RGB and alpha channels with high consistency. 
+                By optimizing attention mechanisms, TransPixar preserves the strengths of the original RGB model and achieves strong alignment between RGB and alpha channels despite limited training data.
+                Our approach effectively generates diverse and consistent RGBA videos, advancing the possibilities for VFX and interactive content creation.
+                <br>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Text-to-Mesh Section -->
+    <div class="section nerf_section">
+        <div class="w-container grey_container">
+            <h2 class="grey-heading_nerf" style="text-align: center;">Text-to-RGBA Video</h2>
+            <div id="text-to-mesh-container"></div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="more-results-button-text" style="
+                padding: 10px 20px; 
+                font-size: 16px; 
+                cursor: pointer; 
+                background-color: #007BFF; /* 按钮背景色 */
+                color: white; /* 字体颜色 */
+                border: none; 
+                border-radius: 5px; /* 圆角效果 */
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+                transition: all 0.3s ease;">More Results</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to Load JSON and Populate the Section -->
+    <script>
+        // Load Text-to-Mesh Data
+        fetch('assets/text_to_rgba.json') // 替换为你的 JSON 文件路径
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('text-to-mesh-container');
+                const moreButton = document.getElementById('more-results-button-text');
+                const maxRowsToShow = 2; // 默认显示的行数
+                const itemsPerRow = 2; // 每行显示的项目数
+                const maxItemsToShow = maxRowsToShow * itemsPerRow; // 默认显示的项目数量
+
+                let allKeys = Object.keys(data); // 获取所有 JSON 键
+                let isShowingAll = false; // 标志是否显示所有内容
+
+                // 设置父容器样式，确保弹性布局
+                container.style.display = "flex";
+                container.style.flexWrap = "wrap"; // 允许内容换行
+                container.style.gap = "20px"; // 设置块之间的间距
+                container.style.justifyContent = "center"; // 居中对齐
+
+                // 渲染内容
+                function renderContent(keys) {
+                    container.innerHTML = ""; // 清空容器内容
+                    keys.forEach(key => {
+                        const block = document.createElement('div');
+                        block.style.flex = "0 0 calc(50% - 20px)"; // 每行 2 个视频
+                        block.style.boxSizing = "border-box"; // 包含内边距和边框
+                        block.style.textAlign = "center"; // 内容居中对齐
+
+                        // 动态生成内容
+                        block.innerHTML = `
+                            <p style="font-size: 14px; margin-bottom: 10px;"><strong>${data[key]}</strong></p>
+                            <video controls loop autoplay muted style="max-width: 100%; width: 100%; height: auto;">
+                                <source src="assets/text_to_rgba/${key}.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        `;
+                        container.appendChild(block);
+                    });
+                }
+
+                // 默认显示部分内容
+                renderContent(allKeys.slice(0, maxItemsToShow));
+
+                // 点击按钮显示所有内容
+                moreButton.addEventListener('click', () => {
+                    if (!isShowingAll) {
+                        renderContent(allKeys); // 显示所有内容
+                        moreButton.innerText = "Show Less"; // 按钮文本切换
+                        isShowingAll = true;
+                    } else {
+                        renderContent(allKeys.slice(0, maxItemsToShow)); // 显示部分内容
+                        moreButton.innerText = "More Results"; // 按钮文本切换
+                        isShowingAll = false;
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
+
+    <!-- Image-to-Mesh Section -->
+    <div class="section nerf_section">
+        <div class="w-container grey_container" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 class="grey-heading_nerf" style="text-align: center;">Image-to-RGBA Video</h2>
+    
+            <!-- 顶部标题，与下方内容对齐 -->
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; width: 100%; max-width: 1200px; margin-bottom: 20px;">
+                <div style="flex: 1; text-align: center;">
+                    <p><strong>Input Image</strong></p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <p><strong>Generated Video</strong></p>
+                </div>
+            </div>
+    
+            <!-- 容器 -->
+            <div id="img-to-mesh-container" style="display: flex; flex-direction: column; gap: 40px; align-items: center; width: 100%;"></div>
+    
+            <!-- 按钮 -->
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="more-results-button-img" style="
+                    padding: 10px 20px; 
+                    font-size: 16px; 
+                    cursor: pointer; 
+                    background-color: #007BFF; /* 按钮背景色 */
+                    color: white; /* 字体颜色 */
+                    border: none; 
+                    border-radius: 5px; /* 圆角效果 */
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+                    transition: all 0.3s ease;">More Results</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts to Dynamically Generate Image and Video Pairs -->
+    <script>
+        const inputImageFolder = "assets/input_image/";
+        const videoFolder = "assets/image_to_rgba/";
+    
+        // 示例文件列表
+        const files = [
+            "dragon", 
+            "fire_door",
+            "plane",
+            "robot",
+
+        ];
+    
+        const container = document.getElementById("img-to-mesh-container");
+        const moreButton = document.getElementById("more-results-button-img");
+    
+        const maxRowsToShow = 3; // 默认显示的行数
+        const isShowingAll = { value: false }; // 当前显示状态，使用对象以便共享
+    
+        // 渲染内容
+        function renderContent(showAll) {
+            container.innerHTML = ""; // 清空内容
+            const maxItemsToShow = showAll ? files.length : maxRowsToShow; // 显示全部或限制行数
+    
+            files.slice(0, maxItemsToShow).forEach(filename => {
+                // 创建一个包裹图片和视频的容器
+                const block = document.createElement("div");
+                block.style.display = "flex"; // 水平排列
+                block.style.flexDirection = "row"; // 强制水平排列
+                block.style.justifyContent = "space-between"; // 左右分布
+                block.style.alignItems = "center"; // 垂直居中
+                block.style.width = "100%"; // 占据整行
+                block.style.maxWidth = "1200px"; // 限制最大宽度
+                block.style.gap = "20px"; // 图片和视频之间的间距
+    
+                // 动态生成内容
+                block.innerHTML = `
+                    <!-- 输入图片 -->
+                    <div style="flex: 1; text-align: center;">
+                        <img src="${inputImageFolder}${filename}.png" alt="Input Image" style="max-height: 256px; width: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                    </div>
+    
+                    <!-- 视频 -->
+                    <div style="flex: 1; text-align: center;">
+                        <video controls loop autoplay muted style="width: 512px; height: 256px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                            <source src="${videoFolder}${filename}.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                `;
+    
+                // 将容器添加到主显示区域
+                container.appendChild(block);
+            });
+    
+            // 按钮状态更新
+            moreButton.innerText = showAll ? "Show Less" : "More Results";
+            moreButton.style.backgroundColor = showAll ? "#DC3545" : "#007BFF";
+            isShowingAll.value = showAll;
+        }
+    
+        // 初始化内容
+        renderContent(false);
+    
+        // 按钮点击事件
+        moreButton.addEventListener("click", () => {
+            renderContent(!isShowingAll.value);
+        });
+    </script>
+    
+
+
+    <div class="white_section_nerf  w-container">
+        <h2 class="grey-heading_nerf">Method Overview</h2>
+        <div class="grid-container-1">
+            <img src="assets/pipeline.png">
+
+            <p> We extend state-of-the-art DiT-like video generation models by introducing new tokens for alpha channel generation, reinitializing their positional embeddings, and adding a zero-initialized domain embedding to distinguish them from RGB tokens. 
+                Using a LoRA-based fine-tuning scheme, we project alpha tokens into the qkv space while preserving RGB quality. 
+                Our approach integrates text, RGB, and alpha tokens in a unified sequence with a grouped attention mechanism, retaining the original model’s performance while improving RGB-alpha alignment by keeping RGB-attend-to-Alpha attention and removing Text-attend-to-Alpha to mitigate risks from limited training data.
+            </p>
+        </div>
+    </div>
+
+
+
+<div class="white_section_nerf grey_container w-container">
+<h2 class="grey-heading_nerf">BibTeX</h2>
+<div class="bibtex">
+    <pre><code>@article{li2024craftsman,
+author    = {Weiyu Li and Jiarui Liu and Hongyu Yan and Rui Chen and Yixun Liang and Xuelin Chen and Ping Tan and Xiaoxiao Long},
+title     = {Kiss3DGen Repurposing Image Diffusion Models for 3D Asset Generation},
+journal   = {arXiv preprint arXiv:2405.14979},
+year      = {2024},
+}</code></pre>
+</div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const moreButton = document.getElementById('more-results-button-refine');
+        const hiddenItems = document.querySelectorAll('.hidden');
+
+        moreButton.addEventListener('click', () => {
+            hiddenItems.forEach(item => {
+                item.classList.toggle('hidden');
+            });
+
+            if (moreButton.innerText === "More Results") {
+                moreButton.innerText = "Show Less";
+            } else {
+                moreButton.innerText = "More Results";
+            }
+        });
+    });
+</script>
+</body>
+<footer>
+    This project page is inspired by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies.</a>, © Weiyu Li. All rights reserved.
+</footer>
+
+</html>
+

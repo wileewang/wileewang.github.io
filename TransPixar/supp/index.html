@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Showcase</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    section {
+    padding: 20px;
+    text-align: center;
+    }
+
+    h2 {
+    margin-bottom: 20px;
+    }
+
+    .grid {
+    display: grid;
+    justify-content: center; 
+    gap: 10px; 
+    grid-template-columns: repeat(4, 320px); 
+    margin: 0 auto; 
+    max-width: 900px; 
+    }
+
+    .grid-one-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Exactly 6 videos in one row */
+    gap: 10px; /* Space between videos */
+    justify-content: center; /* Center align the grid */
+    max-width: calc(6 * 192px + 5 * 10px); /* Limit total width to 6 videos + gaps */
+    margin: 0 auto; /* Center the entire grid */
+    }
+
+    video, img {
+    width: 320px; /* Set the width to 320px */
+    height: 192px; /* Set the height to 192px */
+    object-fit: cover; /* Ensure the content fits proportionally */
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Comparisons -->
+  <section class="comparisons">
+    <h2>Comparisons - Prediction</h2>
+
+    <div class="section-description">
+        <p>Generated RGB</p>
+    </div>
+    <div class="grid grid-dynamic">
+      <video autoplay muted loop controls><source src="comparisons-with-prediction/rgb-3.mp4" type="video/mp4"></video>
+      <video autoplay muted loop controls><source src="comparisons-with-prediction/rgb-4.mp4" type="video/mp4"></video>
+      <video autoplay muted loop controls><source src="comparisons-with-prediction/rgb-5.mp4" type="video/mp4"></video>
+      <video autoplay muted loop controls><source src="comparisons-with-prediction/rgb-6.mp4" type="video/mp4"></video>
+      <!-- Add more videos as needed -->
+    </div>
+
+    <div class="section-description">
+        <p>Ours</p>
+    </div>
+
+    <div class="grid grid-dynamic">
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/ours-3-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/ours-4-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/ours-5-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/ours-6-alpha.mp4" type="video/mp4"></video>
+        <!-- Add more videos as needed -->
+    </div>
+
+    <div class="section-description">
+        <p>Lotus + RGBA</p>
+    </div>
+
+    <div class="grid grid-dynamic">
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/lotus-3-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/lotus-4-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/lotus-5-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/lotus-6-alpha.mp4" type="video/mp4"></video>
+        <!-- Add more videos as needed -->
+    </div>
+
+    <div class="section-description">
+        <p>SAM-2</p>
+    </div>
+    <div class="grid grid-dynamic">
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/sam2-3.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/sam2-4.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/sam2-5.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-prediction/sam2-6.mp4" type="video/mp4"></video>
+        <!-- Add more videos as needed -->
+    </div>
+
+
+
+    <h2>Comparisons - Joint Generation</h2>
+    <!-- Description -->
+    <div class="section-description">
+        <p>AnimateDiff + LayerDiffusion</p>
+    </div>
+    <div class="grid grid-dynamic">
+      <video autoplay muted loop controls><source src="comparisons-with-generation/l&a_balloon.mp4" type="video/mp4"></video>
+      <video autoplay muted loop controls><source src="comparisons-with-generation/l&a_candle.mp4" type="video/mp4"></video>
+      <video autoplay muted loop controls><source src="comparisons-with-generation/l&a_horse.mp4" type="video/mp4"></video>
+      <video autoplay muted loop controls><source src="comparisons-with-generation/l&a_ostrich.mp4" type="video/mp4"></video>
+      <!-- Add more videos as needed -->
+    </div>
+    <!-- Description -->
+    <div class="section-description">
+        <p>Ours</p>
+    </div>
+    <div class="grid grid-dynamic">
+        <video autoplay muted loop controls><source src="comparisons-with-generation/ours_balloon_.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-generation/ours_candle_.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-generation/ours_horse_.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-generation/ours_ostrich_.mp4" type="video/mp4"></video>
+        <!-- Add more videos as needed -->
+    </div>
+
+    <h2>Comparisons - Video Matting</h2>
+    <div class="section-description">
+        <p>Generated RGB</p>
+    </div>
+    <div class="grid grid-one-row">
+        <video autoplay muted loop controls><source src="comparisons-with-matting/input-0.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/input-1.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/input-2.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/input-3.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/input-4.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/input-5.mp4" type="video/mp4"></video>
+      </div>
+    
+    <div class="section-description">
+        <p>Ours</p>
+    </div>
+    <div class="grid grid-one-row">
+        <video autoplay muted loop controls><source src="comparisons-with-matting/ours-0-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/ours-1-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/ours-2-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/ours-3-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/ours-4-alpha.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/ours-5-alpha.mp4" type="video/mp4"></video>
+    </div>
+
+    <div class="section-description">
+        <p>BiMatting</p>
+    </div>
+    <div class="grid grid-one-row">
+        <video autoplay muted loop controls><source src="comparisons-with-matting/bim-0.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/bim-1.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/bim-2.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/bim-3.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/bim-4.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/bim-5.mp4" type="video/mp4"></video>
+    </div>
+
+    <div class="section-description">
+        <p>Robust Video Matting</p>
+    </div>
+    <div class="grid grid-one-row">
+        <video autoplay muted loop controls><source src="comparisons-with-matting/rvm-0.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/rvm-1.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/rvm-2.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/rvm-3.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/rvm-4.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/rvm-5.mp4" type="video/mp4"></video>
+    </div>
+
+    <div class="section-description">
+        <p>Matte Anything</p>
+    </div>
+    <div class="grid grid-one-row">
+        <video autoplay muted loop controls><source src="comparisons-with-matting/mam-0.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/mam-1.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/mam-2.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/mam-3.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/mam-4.mp4" type="video/mp4"></video>
+        <video autoplay muted loop controls><source src="comparisons-with-matting/mam-5.mp4" type="video/mp4"></video>
+    </div>
+  </section>
+</body>
+</html>
