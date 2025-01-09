@@ -1,4 +1,4 @@
-# Craftsman3D.github.io
+# TransPixar.github.io
 
 1. install npm(https://nodejs.org/en/), a package manager for JavaScript programming. In linux, you can install it by run
 ```
