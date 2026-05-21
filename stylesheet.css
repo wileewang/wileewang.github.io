@@ -230,6 +230,46 @@ img {
   object-fit: cover;
 }
 
+.survey-cover {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(40, 99, 93, 0.16), rgba(180, 68, 47, 0.14)),
+    #ffffff;
+  color: var(--ink);
+}
+
+.survey-cover span {
+  align-self: flex-start;
+  border: 1px solid rgba(40, 99, 93, 0.24);
+  border-radius: 999px;
+  color: var(--accent-2);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  padding: 6px 9px;
+  text-transform: uppercase;
+}
+
+.survey-cover strong,
+.survey-cover em {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.survey-cover em {
+  color: var(--accent);
+  text-align: right;
+}
+
 .publication.featured .publication-media img {
   background: #ffffff;
   object-fit: contain;
