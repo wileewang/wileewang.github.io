@@ -5,18 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Luozhou Wang">
   <meta name="description" content="Luozhou Wang, PhD student at HKUST(GZ), working on controllable and efficient generative models for images and videos.">
+  <meta property="og:title" content="Luozhou Wang">
+  <meta property="og:description" content="PhD student at HKUST(GZ) working on controllable and efficient generative models for images and videos.">
+  <meta property="og:image" content="https://wileewang.github.io/images/portrait.jpg">
+  <meta property="og:url" content="https://wileewang.github.io/">
   <title>Luozhou Wang</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260519a">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='64' font-family='Arial' fill='%23111827'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261008a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%232a2d35'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-size='62' font-family='Arial' font-weight='700' fill='%23dfba3d'%3EL%3C/text%3E%3C/svg%3E">
 </head>
 
 <body>
-  <main class="page">
-    <header class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">PhD Student &middot; Generative AI &middot; Video Systems</p>
-        <h1>Luozhou Wang <span>(王罗州)</span></h1>
-        <p class="intro">
+  <div class="layout">
+    <aside class="profile" aria-label="Profile">
+      <img class="portrait" src="images/portrait.jpg" width="900" height="1200"
+        alt="Luozhou Wang sitting on a panda spring rider in a neighborhood playground">
+      <div class="profile-text">
+        <h1 class="name">Luozhou Wang <span class="name-zh" lang="zh-Hans">王罗州</span></h1>
+        <p class="role">PhD student, HKUST(GZ)</p>
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="mailto:wileewang97@gmail.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=FMoFIBUAAAAJ">Google Scholar</a>
+          <a href="https://github.com/wileewang">GitHub</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="about" aria-label="About">
+        <p>
           I am a fourth-year PhD student in Artificial Intelligence at
           <a href="https://hkust-gz.edu.cn/">HKUST(GZ)</a>, advised by Prof.
           <a href="https://www.yingcong.me/">Ying-Cong Chen</a>. I work on
@@ -25,370 +43,379 @@
           with <a href="https://yukangchen.com/">Yukang Chen</a> on efficient
           training and inference systems for video generation.
         </p>
-        <nav class="links" aria-label="Profile links">
-          <a href="mailto:wileewang97@gmail.com">Email</a>
-          <a href="https://github.com/wileewang">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=FMoFIBUAAAAJ">Google Scholar</a>
-        </nav>
-      </div>
+        <p>
+          My research interests center on controllable visual generation, video
+          customization, transparent RGBA video generation, video world models,
+          and practical systems for efficient long-video model training and deployment.
+        </p>
+      </section>
 
-      <figure class="profile">
-        <img src="images/me.jpg" alt="Luozhou Wang">
-      </figure>
-    </header>
-
-    <section class="section" aria-labelledby="news-title">
-      <div class="section-heading">
-        <h2 id="news-title">News</h2>
-      </div>
-      <div class="news-list">
-        <article class="news-item">
-          <time datetime="2026-09">Sep 2026</time>
-          <p>
-            We released <a href="https://arxiv.org/abs/2609.38154">LongLive-Plug</a>,
-            a once-for-all distillation framework that learns CFG, few-step, and
-            long-context capabilities as reusable LoRAs and plugs them into 54
-            downstream video models without target training.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2026-08">Aug 2026</time>
-          <p>
-            We released <a href="https://zhifeichen097.github.io/ReWorld/">ReWorld</a>,
-            a real-time interactive world model with long-horizon memory that keeps
-            revisited places consistent over minute-long rollouts.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2026-05">May 2026</time>
-          <p>
-            We released <a href="https://github.com/NVlabs/LongLive">LongLive 2.0</a>,
-            an open-source NVFP4 parallel infrastructure for long-video generation,
-            covering AR training, few-step distillation, multi-shot training and
-            inference, SP acceleration, NVFP4 KV cache, and asynchronous VAE decoding.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2026-01">Jan 2026</time>
-          <p>
-            We released the survey
-            <a href="https://arxiv.org/abs/2601.17067">A Mechanistic View on Video Generation as World Models: State and Dynamics</a>
-            and its <a href="https://github.com/hit-perfect/Awesome-Video-World-Models">companion repository</a>.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2025">2025</time>
-          <p>
-            <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html">Scene Graph Guided Generation</a>,
-            which introduces the Scene Graph Adapter, was accepted to ICCV 2025.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2025">2025</time>
-          <p>
-            The transparent video generation technology behind
-            <a href="https://wileewang.github.io/TransPixar/">TransPixeler</a>
-            has been transferred into
-            <a href="https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-with-transparent-backgrounds.html">Adobe Firefly</a>,
-            enabling transparent-background video generation with foreground and
-            alpha video exports.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2025">2025</time>
-          <p>
-            <a href="https://wileewang.github.io/TransPixar/">TransPixeler</a>
-            was accepted to CVPR 2025.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2025">2025</time>
-          <p>
-            <a href="https://wileewang.github.io/MotionInversion/">Motion Inversion</a>
-            was accepted to SIGGRAPH 2025.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2024">2024</time>
-          <p>
-            <a href="https://wileewang.github.io/Decompose-and-Realign/">Text-Anchored Score Composition</a>
-            was accepted to ECCV 2024.
-          </p>
-        </article>
-        <article class="news-item">
-          <time datetime="2023">2023</time>
-          <p>
-            <a href="https://arxiv.org/abs/2403.04116">Selective Diffusion Distillation</a>
-            was accepted to ICCV 2023.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="research-title">
-      <div class="section-heading">
-        <h2 id="research-title">Research</h2>
-      </div>
-      <p class="research-text">
-        My research interests center on controllable visual generation, video
-        customization, transparent RGBA video generation, video world models,
-        and practical systems for efficient long-video model training and deployment.
-      </p>
-    </section>
-
-    <section class="section" aria-labelledby="publications-title">
-      <div class="section-heading">
-        <h2 id="publications-title">Selected Publications</h2>
-      </div>
-
-      <div class="publications">
-        <article class="publication featured">
-          <a class="publication-media" href="https://arxiv.org/abs/2609.38154" aria-label="LongLive-Plug paper">
-            <img src="images/longlive_plug_preview.jpg" alt="LongLive-Plug overview: per-task distillation versus once-for-all reusable LoRAs">
-          </a>
-          <div class="publication-copy">
-            <p class="tag">New</p>
-            <h3>
-              <a href="https://arxiv.org/abs/2609.38154">
-                LongLive-Plug: Once-for-All Distillation for Video Generation
-              </a>
-            </h3>
-            <p class="authors">
-              Shuai Yang*, <strong>Luozhou Wang*</strong>, Wei Huang, Zhifei Chen,
-              Bohan Zhang, Xiao Fu, Qianli Ma, Chen-Hsuan Lin, Weian Mao,
-              Bryan Chu, Song Han, Yukang Chen
+      <section class="section" aria-labelledby="news-title">
+        <h2 class="section-title" id="news-title">News</h2>
+        <ol class="news">
+          <li>
+            <time datetime="2026-09">Sep 2026</time>
+            <p>
+              We released <a href="https://arxiv.org/abs/2609.38154">LongLive-Plug</a>,
+              a once-for-all distillation framework that learns CFG, few-step, and
+              long-context capabilities as reusable LoRAs and plugs them into 54
+              downstream video models without target training.
             </p>
-            <p class="venue">arXiv, 2026 &middot; * equal contribution</p>
-            <p class="summary">
-              Distills CFG, few-step sampling, and long-context error correction once
-              into reusable LoRAs that plug into compatible downstream video models
-              without target training, verified on 54 downstream models.
+          </li>
+          <li>
+            <time datetime="2026-08">Aug 2026</time>
+            <p>
+              We released <a href="https://zhifeichen097.github.io/ReWorld/">ReWorld</a>,
+              a real-time interactive world model with long-horizon memory that keeps
+              revisited places consistent over minute-long rollouts.
             </p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2609.38154">Paper</a>
+          </li>
+          <li>
+            <time datetime="2026-05">May 2026</time>
+            <p>
+              We released <a href="https://github.com/NVlabs/LongLive">LongLive 2.0</a>,
+              an open-source NVFP4 parallel infrastructure for long-video generation,
+              covering AR training, few-step distillation, multi-shot training and
+              inference, SP acceleration, NVFP4 KV cache, and asynchronous VAE decoding.
+            </p>
+          </li>
+          <li>
+            <time datetime="2026-01">Jan 2026</time>
+            <p>
+              We released the survey
+              <a href="https://arxiv.org/abs/2601.17067">A Mechanistic View on Video Generation as World Models: State and Dynamics</a>
+              and its <a href="https://github.com/hit-perfect/Awesome-Video-World-Models">companion repository</a>.
+            </p>
+          </li>
+        </ol>
+        <details class="news-more">
+          <summary>Earlier news</summary>
+          <ol class="news">
+            <li>
+              <time datetime="2025">2025</time>
+              <p>
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html">Scene Graph Guided Generation</a>,
+                which introduces the Scene Graph Adapter, was accepted to ICCV 2025.
+              </p>
+            </li>
+            <li>
+              <time datetime="2025">2025</time>
+              <p>
+                The transparent video generation technology behind
+                <a href="https://wileewang.github.io/TransPixar/">TransPixeler</a>
+                has been transferred into
+                <a href="https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-with-transparent-backgrounds.html">Adobe Firefly</a>,
+                enabling transparent-background video generation with foreground and
+                alpha video exports.
+              </p>
+            </li>
+            <li>
+              <time datetime="2025">2025</time>
+              <p>
+                <a href="https://wileewang.github.io/TransPixar/">TransPixeler</a>
+                was accepted to CVPR 2025.
+              </p>
+            </li>
+            <li>
+              <time datetime="2025">2025</time>
+              <p>
+                <a href="https://wileewang.github.io/MotionInversion/">Motion Inversion</a>
+                was accepted to SIGGRAPH 2025.
+              </p>
+            </li>
+            <li>
+              <time datetime="2024">2024</time>
+              <p>
+                <a href="https://wileewang.github.io/Decompose-and-Realign/">Text-Anchored Score Composition</a>
+                was accepted to ECCV 2024.
+              </p>
+            </li>
+            <li>
+              <time datetime="2023">2023</time>
+              <p>
+                <a href="https://arxiv.org/abs/2403.04116">Selective Diffusion Distillation</a>
+                was accepted to ICCV 2023.
+              </p>
+            </li>
+          </ol>
+        </details>
+      </section>
+
+      <section class="section" aria-labelledby="publications-title">
+        <div class="section-head">
+          <h2 class="section-title" id="publications-title">Selected publications</h2>
+          <p class="section-note">* equal contribution</p>
+        </div>
+
+        <ol class="pubs">
+          <li class="pub">
+            <a class="thumb thumb--diagram" href="https://arxiv.org/abs/2609.38154" aria-label="LongLive-Plug paper">
+              <img src="images/longlive_plug_preview.jpg" alt="LongLive-Plug overview: per-task distillation versus once-for-all reusable LoRAs" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2609.38154">LongLive-Plug: Once-for-All Distillation for Video Generation</a>
+              </h3>
+              <p class="authors">
+                Shuai Yang*, <strong>Luozhou Wang*</strong>, Wei Huang, Zhifei Chen,
+                Bohan Zhang, Xiao Fu, Qianli Ma, Chen-Hsuan Lin, Weian Mao,
+                Bryan Chu, Song Han, Yukang Chen
+              </p>
+              <p class="venue-line"><span class="venue venue--preprint">arXiv 2026</span> <mark class="new">New</mark></p>
+              <p class="summary">
+                Distills CFG, few-step sampling, and long-context error correction once
+                into reusable LoRAs that plug into compatible downstream video models
+                without target training, verified on 54 downstream models.
+              </p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2609.38154">Paper</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication featured">
-          <a class="publication-media" href="https://zhifeichen097.github.io/ReWorld/" aria-label="ReWorld project page">
-            <img src="images/reworld_preview.gif" alt="ReWorld interactive world model rollouts">
-          </a>
-          <div class="publication-copy">
-            <p class="tag">New</p>
-            <h3>
-              <a href="https://arxiv.org/abs/2608.23565">
-                ReWorld: An Interactive World Model with Long-Horizon Memory
-              </a>
-            </h3>
-            <p class="authors">
-              Zhifei Chen*, <strong>Luozhou Wang*</strong>, Guibao Shen, Dongyu Yan,
-              Shuai Yang, Tianshuo Xu, Yihua Du, Wei Wang, Tianyi Gui,
-              Lianghua Huang, Yingcong Chen
-            </p>
-            <p class="venue">arXiv, 2026 &middot; * equal contribution</p>
-            <p class="summary">
-              A real-time interactive world model that follows camera actions and
-              remembers revisited places: a fixed-size KV cache with pose-indexed
-              landmark memory keeps minute-long rollouts consistent at 704&times;1280.
-            </p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2608.23565">Paper</a>
-              <a href="https://zhifeichen097.github.io/ReWorld/">Project Page</a>
-              <a href="https://github.com/zhifeichen097/ReWorld">Code</a>
+          <li class="pub">
+            <a class="thumb" href="https://zhifeichen097.github.io/ReWorld/" aria-label="ReWorld project page">
+              <picture>
+                <source srcset="images/reworld_preview_still.jpg" media="(prefers-reduced-motion: reduce)">
+                <img src="images/reworld_preview.gif" alt="ReWorld interactive world model rollouts" loading="lazy">
+              </picture>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2608.23565">ReWorld: An Interactive World Model with Long-Horizon Memory</a>
+              </h3>
+              <p class="authors">
+                Zhifei Chen*, <strong>Luozhou Wang*</strong>, Guibao Shen, Dongyu Yan,
+                Shuai Yang, Tianshuo Xu, Yihua Du, Wei Wang, Tianyi Gui,
+                Lianghua Huang, Yingcong Chen
+              </p>
+              <p class="venue-line"><span class="venue venue--preprint">arXiv 2026</span> <mark class="new">New</mark></p>
+              <p class="summary">
+                A real-time interactive world model that follows camera actions and
+                remembers revisited places: a fixed-size KV cache with pose-indexed
+                landmark memory keeps minute-long rollouts consistent at 704&times;1280.
+              </p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2608.23565">Paper</a>
+                <a href="https://zhifeichen097.github.io/ReWorld/">Project page</a>
+                <a href="https://github.com/zhifeichen097/ReWorld">Code</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication featured">
-          <a class="publication-media" href="https://nvlabs.github.io/LongLive/LongLive2/" aria-label="LongLive 2.0 project page">
-            <img src="images/longlive2_preview.png" alt="LongLive 2.0 NVFP4 key result overview">
-          </a>
-          <div class="publication-copy">
-            <p class="tag">New release</p>
-            <h3>
-              <a href="https://huggingface.co/papers/2605.18739">
-                LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation
-              </a>
-            </h3>
-            <p class="authors">
-              Yukang Chen*, <strong>Luozhou Wang*</strong>, Wei Huang*, Shuai Yang*,
-              Bohan Zhang, Yicheng Xiao, Ruihang Chu, Weian Mao, Qixin Hu,
-              Shaoteng Liu, Yuyang Zhao, Huizi Mao, Ying-Cong Chen, Enze Xie,
-              Xiaojuan Qi, Song Han
-            </p>
-            <p class="venue">arXiv, 2026 &middot; * equal contribution</p>
-            <p class="summary">
-              A 4-bit long-video generation infrastructure built around NVFP4 and
-              parallelism, supporting the full path from training to deployment and
-              reaching 45.7 FPS on LongLive-2.0-5B.
-            </p>
-            <div class="publication-links">
-              <a href="https://huggingface.co/papers/2605.18739">Paper</a>
-              <a href="https://github.com/NVlabs/LongLive">Code</a>
-              <a href="https://nvlabs.github.io/LongLive/LongLive2/">Demo</a>
+          <li class="pub">
+            <a class="thumb thumb--diagram" href="https://nvlabs.github.io/LongLive/LongLive2/" aria-label="LongLive 2.0 project page">
+              <img src="images/longlive2_preview.png" alt="LongLive 2.0 NVFP4 key result overview" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://huggingface.co/papers/2605.18739">LongLive-2.0: An NVFP4 Parallel Infrastructure for Long Video Generation</a>
+              </h3>
+              <p class="authors">
+                Yukang Chen*, <strong>Luozhou Wang*</strong>, Wei Huang*, Shuai Yang*,
+                Bohan Zhang, Yicheng Xiao, Ruihang Chu, Weian Mao, Qixin Hu,
+                Shaoteng Liu, Yuyang Zhao, Huizi Mao, Ying-Cong Chen, Enze Xie,
+                Xiaojuan Qi, Song Han
+              </p>
+              <p class="venue-line"><span class="venue venue--preprint">arXiv 2026</span></p>
+              <p class="summary">
+                A 4-bit long-video generation infrastructure built around NVFP4 and
+                parallelism, supporting the full path from training to deployment and
+                reaching 45.7 FPS on LongLive-2.0-5B.
+              </p>
+              <p class="pub-links">
+                <a href="https://huggingface.co/papers/2605.18739">Paper</a>
+                <a href="https://github.com/NVlabs/LongLive">Code</a>
+                <a href="https://nvlabs.github.io/LongLive/LongLive2/">Demo</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication survey">
-          <a class="publication-media survey-cover" href="https://arxiv.org/abs/2601.17067" aria-label="Video generation world models survey">
-            <span>Survey</span>
-            <strong>State</strong>
-            <em>Dynamics</em>
-          </a>
-          <div class="publication-copy">
-            <h3>
-              <a href="https://arxiv.org/abs/2601.17067">
-                A Mechanistic View on Video Generation as World Models: State and Dynamics
-              </a>
-            </h3>
-            <p class="authors">
-              <strong>Luozhou Wang*</strong>, Zhifei Chen*, Yihua Du, Dongyu Yan,
-              Wenhang Ge, Guibao Shen, Xinli Xu, Leyi Wu, Man Chen, Tianshuo Xu,
-              Peiran Ren, Xin Tao, Pengfei Wan, Ying-Cong Chen
-            </p>
-            <p class="venue">arXiv, 2026 &middot; * equal contribution</p>
-            <p class="summary">
-              A survey that frames video generation as world modeling through
-              state construction and dynamics modeling.
-            </p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2601.17067">Paper</a>
-              <a href="https://github.com/hit-perfect/Awesome-Video-World-Models">Code</a>
+          <li class="pub">
+            <a class="thumb thumb--type" href="https://arxiv.org/abs/2601.17067" aria-label="Video generation as world models survey">
+              <span>State</span>
+              <span>Dynamics</span>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2601.17067">A Mechanistic View on Video Generation as World Models: State and Dynamics</a>
+              </h3>
+              <p class="authors">
+                <strong>Luozhou Wang*</strong>, Zhifei Chen*, Yihua Du, Dongyu Yan,
+                Wenhang Ge, Guibao Shen, Xinli Xu, Leyi Wu, Man Chen, Tianshuo Xu,
+                Peiran Ren, Xin Tao, Pengfei Wan, Ying-Cong Chen
+              </p>
+              <p class="venue-line"><span class="venue venue--preprint">arXiv 2026</span></p>
+              <p class="summary">
+                A survey that frames video generation as world modeling through
+                state construction and dynamics modeling.
+              </p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2601.17067">Paper</a>
+                <a href="https://github.com/hit-perfect/Awesome-Video-World-Models">Code</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication">
-          <a class="publication-media" href="https://wileewang.github.io/TransPixar/" aria-label="TransPixeler project page">
-            <img src="images/transpixar_after.gif" alt="TransPixeler RGBA video preview">
-          </a>
-          <div class="publication-copy">
-            <h3>
-              <a href="https://arxiv.org/abs/2501.03006">
-                TransPixeler: Advancing Text-to-Video Generation with Transparency
-              </a>
-            </h3>
-            <p class="authors">
-              <strong>Luozhou Wang</strong>, Yijun Li, Zhifei Chen, Jui-Hsien Wang,
-              Zhifei Zhang, He Zhang, Zhe Lin, Yingcong Chen
-            </p>
-            <p class="venue">CVPR, 2025</p>
-            <p class="summary">
-              The transparent-background video generation technology behind this
-              work has been transferred into Adobe Firefly, where creators can
-              generate foreground videos with alpha-video exports for compositing.
-            </p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2501.03006">Paper</a>
-              <a href="https://wileewang.github.io/TransPixar/">Project Page</a>
-              <a href="https://github.com/wileewang/TransPixeler">Code</a>
-              <a href="https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-with-transparent-backgrounds.html">Adobe Firefly</a>
+          <li class="pub">
+            <a class="thumb" href="https://wileewang.github.io/TransPixar/" aria-label="TransPixeler project page">
+              <picture>
+                <source srcset="images/transpixar_still.jpg" media="(prefers-reduced-motion: reduce)">
+                <img src="images/transpixar_after.gif" alt="TransPixeler RGBA video preview" loading="lazy">
+              </picture>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2501.03006">TransPixeler: Advancing Text-to-Video Generation with Transparency</a>
+              </h3>
+              <p class="authors">
+                <strong>Luozhou Wang</strong>, Yijun Li, Zhifei Chen, Jui-Hsien Wang,
+                Zhifei Zhang, He Zhang, Zhe Lin, Yingcong Chen
+              </p>
+              <p class="venue-line"><span class="venue">CVPR 2025</span></p>
+              <p class="summary">
+                The transparent-background video generation technology behind this
+                work has been transferred into Adobe Firefly, where creators can
+                generate foreground videos with alpha-video exports for compositing.
+              </p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2501.03006">Paper</a>
+                <a href="https://wileewang.github.io/TransPixar/">Project page</a>
+                <a href="https://github.com/wileewang/TransPixeler">Code</a>
+                <a href="https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-with-transparent-backgrounds.html">Adobe Firefly</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication">
-          <a class="publication-media" href="https://wileewang.github.io/MotionInversion/" aria-label="Motion Inversion project page">
-            <img src="images/mi_before.gif" alt="Motion Inversion video customization preview">
-          </a>
-          <div class="publication-copy">
-            <h3>
-              <a href="https://arxiv.org/abs/2403.20193">
-                Motion Inversion for Video Customization
-              </a>
-            </h3>
-            <p class="authors">
-              <strong>Luozhou Wang*</strong>, Ziyang Mai*, Guibao Shen, Yixun Liang,
-              Xin Tao, Pengfei Wan, Di Zhang, Yijun Li, Yingcong Chen
-            </p>
-            <p class="venue">SIGGRAPH, 2025 &middot; * equal contribution</p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2403.20193">Paper</a>
-              <a href="https://wileewang.github.io/MotionInversion/">Project Page</a>
-              <a href="https://github.com/EnVision-Research/MotionInversion">Code</a>
+          <li class="pub">
+            <a class="thumb" href="https://wileewang.github.io/MotionInversion/" aria-label="Motion Inversion project page">
+              <picture>
+                <source srcset="images/mi_still.jpg" media="(prefers-reduced-motion: reduce)">
+                <img src="images/mi_before.gif" alt="Motion Inversion video customization preview" loading="lazy">
+              </picture>
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2403.20193">Motion Inversion for Video Customization</a>
+              </h3>
+              <p class="authors">
+                <strong>Luozhou Wang*</strong>, Ziyang Mai*, Guibao Shen, Yixun Liang,
+                Xin Tao, Pengfei Wan, Di Zhang, Yijun Li, Yingcong Chen
+              </p>
+              <p class="venue-line"><span class="venue">SIGGRAPH 2025</span></p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2403.20193">Paper</a>
+                <a href="https://wileewang.github.io/MotionInversion/">Project page</a>
+                <a href="https://github.com/EnVision-Research/MotionInversion">Code</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication">
-          <div class="publication-media">
-            <img src="images/sg.png" alt="Scene Graph Adapter guidance preview">
-          </div>
-          <div class="publication-copy">
-            <h3>
-              <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html">
-                Scene Graph Guided Generation: Enable Accurate Relations Generation in Text-to-Image Models via Textural Rectification
-              </a>
-            </h3>
-            <p class="authors">
-              Guibao Shen*, <strong>Luozhou Wang*</strong>, Jiantao Lin, Wenhang Ge,
-              Chaozhe Zhang, Xin Tao, Di Zhang, Pengfei Wan, Guangyong Chen,
-              Yijun Li, Ying-cong Chen
-            </p>
-            <p class="venue">ICCV, 2025 &middot; * equal contribution</p>
-            <p class="summary">
-              Introduces the Scene Graph Adapter, formerly SG-Adapter, to improve
-              relation control in text-to-image generation.
-            </p>
-            <div class="publication-links">
-              <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html">Paper</a>
-              <a href="https://arxiv.org/abs/2405.15321">arXiv</a>
+          <li class="pub">
+            <div class="thumb">
+              <img src="images/sg.png" alt="Scene Graph Adapter guidance preview" loading="lazy">
             </div>
-          </div>
-        </article>
-
-        <article class="publication">
-          <a class="publication-media" href="https://wileewang.github.io/Decompose-and-Realign/" aria-label="Text-Anchored Score Composition project page">
-            <img src="images/tasc_after.png" alt="Text-Anchored Score Composition preview">
-          </a>
-          <div class="publication-copy">
-            <h3>
-              <a href="https://arxiv.org/abs/2306.14408">
-                Text-Anchored Score Composition: Tackling Condition Misalignment in Text-to-Image Diffusion Models
-              </a>
-            </h3>
-            <p class="authors">
-              <strong>Luozhou Wang*</strong>, Guibao Shen*, Wenhang Ge, Guangyong Chen,
-              Yijun Li, Yingcong Chen
-            </p>
-            <p class="venue">ECCV, 2024 &middot; * equal contribution</p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2306.14408">Paper</a>
-              <a href="https://wileewang.github.io/Decompose-and-Realign/">Project Page</a>
-              <a href="https://github.com/EnVision-Research/TASC">Code</a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html">Scene Graph Guided Generation: Enable Accurate Relations Generation in Text-to-Image Models via Textural Rectification</a>
+              </h3>
+              <p class="authors">
+                Guibao Shen*, <strong>Luozhou Wang*</strong>, Jiantao Lin, Wenhang Ge,
+                Chaozhe Zhang, Xin Tao, Di Zhang, Pengfei Wan, Guangyong Chen,
+                Yijun Li, Ying-cong Chen
+              </p>
+              <p class="venue-line"><span class="venue">ICCV 2025</span></p>
+              <p class="summary">
+                Introduces the Scene Graph Adapter, formerly SG-Adapter, to improve
+                relation control in text-to-image generation.
+              </p>
+              <p class="pub-links">
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html">Paper</a>
+                <a href="https://arxiv.org/abs/2405.15321">arXiv</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-        <article class="publication">
-          <div class="publication-media">
-            <img src="images/sdd_before.png" alt="Selective Diffusion Distillation preview">
-          </div>
-          <div class="publication-copy">
-            <h3>
-              <a href="https://arxiv.org/abs/2403.04116">
-                Not All Steps are Created Equal: Selective Diffusion Distillation for Image Manipulation
-              </a>
-            </h3>
-            <p class="authors">
-              <strong>Luozhou Wang*</strong>, Shuai Yang*, Shu Liu, Yingcong Chen
-            </p>
-            <p class="venue">ICCV, 2023 &middot; * equal contribution</p>
-            <div class="publication-links">
-              <a href="https://arxiv.org/abs/2403.04116">Paper</a>
-              <a href="https://github.com/EnVision-Research/Selective-Diffusion-Distillation">Code</a>
+          <li class="pub">
+            <a class="thumb" href="https://wileewang.github.io/Decompose-and-Realign/" aria-label="Text-Anchored Score Composition project page">
+              <img src="images/tasc_after.png" alt="Text-Anchored Score Composition preview" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2306.14408">Text-Anchored Score Composition: Tackling Condition Misalignment in Text-to-Image Diffusion Models</a>
+              </h3>
+              <p class="authors">
+                <strong>Luozhou Wang*</strong>, Guibao Shen*, Wenhang Ge, Guangyong Chen,
+                Yijun Li, Yingcong Chen
+              </p>
+              <p class="venue-line"><span class="venue">ECCV 2024</span></p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2306.14408">Paper</a>
+                <a href="https://wileewang.github.io/Decompose-and-Realign/">Project page</a>
+                <a href="https://github.com/EnVision-Research/TASC">Code</a>
+              </p>
             </div>
-          </div>
-        </article>
+          </li>
 
-      </div>
-    </section>
+          <li class="pub">
+            <div class="thumb">
+              <img src="images/sdd_before.png" alt="Selective Diffusion Distillation preview" loading="lazy">
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2403.04116">Not All Steps are Created Equal: Selective Diffusion Distillation for Image Manipulation</a>
+              </h3>
+              <p class="authors">
+                <strong>Luozhou Wang*</strong>, Shuai Yang*, Shu Liu, Yingcong Chen
+              </p>
+              <p class="venue-line"><span class="venue">ICCV 2023</span></p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2403.04116">Paper</a>
+                <a href="https://github.com/EnVision-Research/Selective-Diffusion-Distillation">Code</a>
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
 
-    <footer class="footer">
-      <p>Template roots from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p>
-    </footer>
-  </main>
+      <section class="section" aria-labelledby="experience-title">
+        <h2 class="section-title" id="experience-title">Experience</h2>
+        <ol class="experience">
+          <li>
+            <div class="exp-head">
+              <h3 class="exp-org">NVIDIA Research</h3>
+              <span class="exp-years">2026 &ndash; present</span>
+            </div>
+            <p class="exp-desc">Research intern with Yukang Chen on long-video generation infrastructure: LongLive-2.0 and LongLive-Plug.</p>
+          </li>
+          <li>
+            <div class="exp-head">
+              <h3 class="exp-org">Kuaishou Technology, K-Star program</h3>
+              <span class="exp-years">2025 &ndash; 2026</span>
+            </div>
+            <p class="exp-desc">Research intern with Xin Tao on memory mechanisms for long-video generation.</p>
+          </li>
+          <li>
+            <div class="exp-head">
+              <h3 class="exp-org">Adobe Research</h3>
+              <span class="exp-years">2024</span>
+            </div>
+            <p class="exp-desc">Research intern with Yijun Li on RGBA video generation (TransPixeler, CVPR 2025), transferred into Adobe Firefly.</p>
+          </li>
+          <li>
+            <div class="exp-head">
+              <h3 class="exp-org">Kuaishou Technology</h3>
+              <span class="exp-years">2023 &ndash; 2024</span>
+            </div>
+            <p class="exp-desc">Research intern with Xin Tao on scene-graph-guided image generation (ICCV 2025) and Motion Inversion (SIGGRAPH 2025).</p>
+          </li>
+        </ol>
+      </section>
+
+      <footer class="footer">
+        <p>Template roots from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron's website</a>.</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
