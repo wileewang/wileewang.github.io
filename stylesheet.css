@@ -433,47 +433,6 @@ summary:focus-visible {
   font-weight: 560;
 }
 
-/* ---------- Experience ---------- */
-
-.experience {
-  display: grid;
-  gap: 22px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.exp-head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.exp-org {
-  margin: 0;
-  color: var(--ink);
-  font-family: var(--sans);
-  font-size: 1.0625rem;
-  font-weight: 620;
-  line-height: 1.35;
-}
-
-.exp-years {
-  flex-shrink: 0;
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 0.9375rem;
-  font-variant-numeric: tabular-nums;
-}
-
-.exp-desc {
-  max-width: 38em;
-  margin: 4px 0 0;
-  font-size: 1.0625rem;
-  line-height: 1.55;
-}
-
 /* ---------- Footer ---------- */
 
 .footer {
@@ -574,10 +533,5 @@ summary:focus-visible {
 
   .thumb--type span {
     font-size: 2rem;
-  }
-
-  .exp-head {
-    flex-direction: column;
-    gap: 0;
   }
 }
