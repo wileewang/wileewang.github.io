@@ -43,6 +43,23 @@
       </div>
       <div class="news-list">
         <article class="news-item">
+          <time datetime="2026-09">Sep 2026</time>
+          <p>
+            We released <a href="https://arxiv.org/abs/2609.38154">LongLive-Plug</a>,
+            a once-for-all distillation framework that learns CFG, few-step, and
+            long-context capabilities as reusable LoRAs and plugs them into 54
+            downstream video models without target training.
+          </p>
+        </article>
+        <article class="news-item">
+          <time datetime="2026-08">Aug 2026</time>
+          <p>
+            We released <a href="https://zhifeichen097.github.io/ReWorld/">ReWorld</a>,
+            a real-time interactive world model with long-horizon memory that keeps
+            revisited places consistent over minute-long rollouts.
+          </p>
+        </article>
+        <article class="news-item">
           <time datetime="2026-05">May 2026</time>
           <p>
             We released <a href="https://github.com/NVlabs/LongLive">LongLive 2.0</a>,
@@ -125,6 +142,64 @@
       </div>
 
       <div class="publications">
+        <article class="publication featured">
+          <a class="publication-media" href="https://arxiv.org/abs/2609.38154" aria-label="LongLive-Plug paper">
+            <img src="images/longlive_plug_preview.jpg" alt="LongLive-Plug overview: per-task distillation versus once-for-all reusable LoRAs">
+          </a>
+          <div class="publication-copy">
+            <p class="tag">New</p>
+            <h3>
+              <a href="https://arxiv.org/abs/2609.38154">
+                LongLive-Plug: Once-for-All Distillation for Video Generation
+              </a>
+            </h3>
+            <p class="authors">
+              Shuai Yang*, <strong>Luozhou Wang*</strong>, Wei Huang, Zhifei Chen,
+              Bohan Zhang, Xiao Fu, Qianli Ma, Chen-Hsuan Lin, Weian Mao,
+              Bryan Chu, Song Han, Yukang Chen
+            </p>
+            <p class="venue">arXiv, 2026 &middot; * equal contribution</p>
+            <p class="summary">
+              Distills CFG, few-step sampling, and long-context error correction once
+              into reusable LoRAs that plug into compatible downstream video models
+              without target training, verified on 54 downstream models.
+            </p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2609.38154">Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication featured">
+          <a class="publication-media" href="https://zhifeichen097.github.io/ReWorld/" aria-label="ReWorld project page">
+            <img src="images/reworld_preview.gif" alt="ReWorld interactive world model rollouts">
+          </a>
+          <div class="publication-copy">
+            <p class="tag">New</p>
+            <h3>
+              <a href="https://arxiv.org/abs/2608.23565">
+                ReWorld: An Interactive World Model with Long-Horizon Memory
+              </a>
+            </h3>
+            <p class="authors">
+              Zhifei Chen*, <strong>Luozhou Wang*</strong>, Guibao Shen, Dongyu Yan,
+              Shuai Yang, Tianshuo Xu, Yihua Du, Wei Wang, Tianyi Gui,
+              Lianghua Huang, Yingcong Chen
+            </p>
+            <p class="venue">arXiv, 2026 &middot; * equal contribution</p>
+            <p class="summary">
+              A real-time interactive world model that follows camera actions and
+              remembers revisited places: a fixed-size KV cache with pose-indexed
+              landmark memory keeps minute-long rollouts consistent at 704&times;1280.
+            </p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2608.23565">Paper</a>
+              <a href="https://zhifeichen097.github.io/ReWorld/">Project Page</a>
+              <a href="https://github.com/zhifeichen097/ReWorld">Code</a>
+            </div>
+          </div>
+        </article>
+
         <article class="publication featured">
           <a class="publication-media" href="https://nvlabs.github.io/LongLive/LongLive2/" aria-label="LongLive 2.0 project page">
             <img src="images/longlive2_preview.png" alt="LongLive 2.0 NVFP4 key result overview">
